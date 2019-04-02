@@ -23,7 +23,7 @@ package createdatafile;
 		try {
 			out = new FileWriter(dataFile,true);
 			writeFile = new BufferedWriter(out);
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 2; i++) {
 				System.out.print("Enter student name: ");
 				name = input.next();
 				System.out.print("Enter test score: ");
@@ -36,9 +36,9 @@ package createdatafile;
     		writeFile.close();
     		out.close();
     		System.out.println("Data written to file.");
-    	} catch (IOException e) {
-			System.out.println("Problem writing to file.");
-    		System.err.println("IOException: " + e.getMessage());
-    	}
-	}	
+                } catch (IOException e) {
+                        System.out.println("Problem writing to file.");
+                        System.err.println("IOException: " + e.getMessage());
+                }
+                }	
  }
